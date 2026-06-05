@@ -1,9 +1,13 @@
-import pandas as pd
+"""Esse é o módulo de tranformação de dados."""
+
 from typing import List
 
-"""  
-função para tranformar uma lista de dataframes em um único dataframe
-"""
+import pandas as pd
+
 
 def contact_data_frames(data_frame_list: List[pd.DataFrame]) -> pd.DataFrame:
+    """
+    Função para tranformar uma lista de dataframes em um único dataframe;
+    """
+
     return pd.concat(data_frame_list, ignore_index=True)
