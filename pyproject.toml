@@ -17,6 +17,12 @@ pydocstyle = "^6.3.0"
 pip-audit = "^2.10.0"
 setuptools = "^82.0.1"
 taskipy = "^1.14.1"
+mkdocs = "^1.6.1"
+mkdocstrings-python = "^2.0.4"
+pygments = "^2.20.0"
+mkdocs-material = "^9.7.6"
+pymdown-extensions = "^10.21.3"
+mkdocs-bootstrap386 = "^0.0.2"
 
 
 [build-system]
@@ -31,3 +37,4 @@ known_third_party = []
 format = "isort . && blue ."
 test = "poetry run pytest -v"
 run = "python3 app/main.py"
+kill = "kill -9 $(lsof -t -i:8000)"

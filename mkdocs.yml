@@ -1,0 +1,20 @@
+site_name: Primeiro ETL com python e excel
+theme: 
+  name: material # or other theme
+  palette: 
+    primary: blue
+  language: pt
+  
+repo_name: "lcorreasantos/estrutura_zero"
+repo_url: "https://github.com/lcorreasantos/estrutura_zero"
+
+markdown_extensions: 
+  - pymdownx.superfences: 
+      custom_fences: 
+        - name: mermaid
+          class: mermaid
+
+plugins: 
+  - search 
+  - mkdocstrings: 
+      default_handler: python
